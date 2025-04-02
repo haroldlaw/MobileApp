@@ -1,2 +1,67 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+
+:root {
+    --ion-color-primary: #25D366;
+    --ion-color-primary-rgb: 37, 211, 102;
+    --ion-color-primary-contrast: #000000;
+    --ion-color-primary-contrast-rgb: 0, 0, 0;
+    --ion-color-primary-shade: #21ba5a;
+    --ion-color-primary-tint: #3bd775;
+
+    --ion-color-secondary: #128C7E;
+    --ion-color-secondary-rgb: 18, 140, 126;
+    --ion-color-secondary-contrast: #000000;
+    --ion-color-secondary-contrast-rgb: 0, 0, 0;
+    --ion-color-secondary-shade: #107b6f;
+    --ion-color-secondary-tint: #2a988b;
+
+    --ion-color-tertiary: #DCF8C6;
+    --ion-color-tertiary-rgb: 220, 248, 198;
+    --ion-color-tertiary-contrast: #000000;
+    --ion-color-tertiary-contrast-rgb: 0, 0, 0;
+    --ion-color-tertiary-shade: #c2daae;
+    --ion-color-tertiary-tint: #e0f9cc;
+
+    --ion-color-success: #34B7F1;
+    --ion-color-success-rgb: 52, 183, 241;
+    --ion-color-success-contrast: #000000;
+    --ion-color-success-contrast-rgb: 0, 0, 0;
+    --ion-color-success-shade: #2ea1d4;
+    --ion-color-success-tint: #48bef2;
+
+    --ion-color-warning: #ffc409;
+    --ion-color-warning-rgb: 255, 196, 9;
+    --ion-color-warning-contrast: #000000;
+    --ion-color-warning-contrast-rgb: 0, 0, 0;
+    --ion-color-warning-shade: #e0ac08;
+    --ion-color-warning-tint: #ffca22;
+
+    --ion-color-danger: #f44336;
+    --ion-color-danger-rgb: 244, 67, 54;
+    --ion-color-danger-contrast: #000000;
+    --ion-color-danger-contrast-rgb: 0, 0, 0;
+    --ion-color-danger-shade: #d73b30;
+    --ion-color-danger-tint: #f5564a;
+
+    --ion-color-light: #ECE5DD;
+    --ion-color-light-rgb: 236, 229, 221;
+    --ion-color-light-contrast: #000000;
+    --ion-color-light-contrast-rgb: 0, 0, 0;
+    --ion-color-light-shade: #d0cac2;
+    --ion-color-light-tint: #eee8e0;
+
+    --ion-color-medium: #5f5f5f;
+    --ion-color-medium-rgb: 95, 95, 95;
+    --ion-color-medium-contrast: #ffffff;
+    --ion-color-medium-contrast-rgb: 255, 255, 255;
+    --ion-color-medium-shade: #545454;
+    --ion-color-medium-tint: #6f6f6f;
+
+    --ion-color-dark: #075E54;
+    --ion-color-dark-rgb: 7, 94, 84;
+    --ion-color-dark-contrast: #ffffff;
+    --ion-color-dark-contrast-rgb: 255, 255, 255;
+    --ion-color-dark-shade: #06534a;
+    --ion-color-dark-tint: #206e65;
+}
