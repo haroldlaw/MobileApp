@@ -1,20 +1,38 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { Component, OnInit, signal } from '@angular/core';
+import { IonIcon, IonTabBar, IonTabButton, IonTabs } from '@ionic/angular/standalone';
+import { addIcons } from 'ionicons';
+import { chatbubbleOutline, cogOutline, callOutline, chatbubblesOutline, chatbubble, call, chatbubbles, cog } from 'ionicons/icons';
 
 @Component({
   selector: 'app-tabs',
   templateUrl: './tabs.page.html',
   styleUrls: ['./tabs.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonIcon, IonTabButton, IonTabs, IonTabBar]
 })
 export class TabsPage implements OnInit {
 
-  constructor() { }
+  selectedTab = signal<string>('chats');
+
+  constructor() {
+    addIcons({
+      chatbubbleOutline,
+      cogOutline,
+      callOutline,
+      chatbubblesOutline,
+      chatbubble,
+      call,
+      chatbubbles,
+      cog
+    })
+  }
 
   ngOnInit() {
+  }
+
+  getSelected(event: any) {
+    console.log(event);
+    this.selectedTab.set(event?.tab);
   }
 
 }
