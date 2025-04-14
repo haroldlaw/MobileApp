@@ -1,7 +1,7 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { CommonModule, NgIf } from '@angular/common';
 import { FormGroup, ReactiveFormsModule, FormControl, Validators } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonList, IonInput, IonIcon, IonInputPasswordToggle, IonText, IonButton, IonSpinner, IonCard } from '@ionic/angular/standalone';
+import { IonContent, IonInput, IonIcon, IonInputPasswordToggle, IonText, IonButton, IonSpinner, IonCard } from '@ionic/angular/standalone';
 import { RouterLink } from '@angular/router';
 import { addIcons } from 'ionicons';
 import { lockClosedOutline, mailOutline } from 'ionicons/icons';
@@ -15,9 +15,6 @@ import { lockClosedOutline, mailOutline } from 'ionicons/icons';
     NgIf,
     CommonModule,
     IonContent,
-    IonHeader,
-    IonTitle,
-    IonList,
     IonInput,
     ReactiveFormsModule,
     IonIcon,

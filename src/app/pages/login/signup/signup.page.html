@@ -1,13 +1,43 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>signup</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">signup</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div align="center" class="logo">
+    <img src="assets/logo.png" />
+  </div>
+  <ion-card class="ion-padding">
+    <form [formGroup]="form">
+      <ion-input placeholder="Name" type="text" formControlName="name" class="ion-margin-bottom"
+        errorText="* Please enter your name">
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+      </ion-input>
+
+      <ion-input placeholder="Email" type="email" formControlName="email" class="ion-margin-bottom"
+        errorText="* Please enter your email">
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+      </ion-input>
+
+      <ion-input placeholder="Password" type="text" formControlName="password"
+        [errorText]="form.get('password')?.hasError('minlength') ? '* Password must have at least 8 characters' : '* Please enter your password'">
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+      </ion-input>
+
+      <ion-button *ngIf="!isSignUpValue; else loading" size="large" expand="block"
+        class="ion-margin-top ion-padding-top" [strong]="true" (click)="signup()">
+        <ion-text>Sign Up</ion-text>
+      </ion-button>
+
+      <ng-template #loading>
+        <ion-button size="large" expand="block" class="ion-margin-top ion-padding-top" [strong]="true" disabled>
+          <ion-spinner name="crescent"></ion-spinner>
+        </ion-button>
+      </ng-template>
+    </form>
+  </ion-card>
 </ion-content>
