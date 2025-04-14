@@ -29,4 +29,9 @@ export const routes: Routes = [
             },
         ],
     },
+    {
+        path: '',
+        redirectTo: '/tabs/chats',
+        pathMatch: 'full',
+    }
 ];
